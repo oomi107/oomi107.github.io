@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>oomi107 Apps</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-sub: #64748b;
+      --border: #e2e8f0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      max-width: 520px;
+      margin: 0 auto;
+      padding: 40px 16px;
+      line-height: 1.5;
+    }
+    .header { text-align: center; margin-bottom: 32px; }
+    .header h1 { font-size: 22px; margin-bottom: 8px; }
+    .header p { font-size: 14px; color: var(--text-sub); margin: 0; }
+    
+    .x-btn {
+      display: inline-block;
+      margin-top: 16px;
+      background: #000;
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 18px;
+      border-radius: 20px;
+    }
+
+    .section-title { font-size: 13px; color: var(--text-sub); font-weight: bold; margin-bottom: 12px; }
+    .app-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    }
+    .app-card h2 { font-size: 16px; margin: 0 0 6px 0; }
+    .app-card p { font-size: 13px; color: var(--text-sub); margin: 0 0 12px 0; }
+    .links { display: flex; gap: 8px; flex-wrap: wrap; }
+    .links a {
+      font-size: 12px;
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      color: var(--text);
+      background: #f1f5f9;
+    }
+    .links a.store {
+      background: #01875f;
+      color: #fff;
+      border-color: #01875f;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>アプリ公式サポート</h1>
+    <p>更新情報や不具合のお問い合わせはXまで</p>
+    <!-- XのプロフィールURLに書き換え -->
+    <a href="https://x.com/あなたのID" class="x-btn" target="_blank">公式 X（@あなたのID）</a>
+  </div>
+
+  <div class="section-title">公開アプリ</div>
+
+  <!-- かるたアプリ -->
+  <div class="app-card">
+    <h2>かるたアプリ</h2>
+    <p>手軽に遊べるかるたアプリです。</p>
+    <div class="links">
+      <a href="https://play.google.com/store/apps/details?id=パッケージ名" class="store" target="_blank">Playストア</a>
+      <!-- 既存リポジトリのURLを指定 -->
+      <a href="https://oomi107.github.io/privacy-policy/karuta-app/">プライバシーポリシー</a>
+    </div>
+  </div>
+
+  <!-- test-it アプリ -->
+  <div class="app-card">
+    <h2>test-it</h2>
+    <p>アプリの簡単な説明文を記載します。</p>
+    <div class="links">
+      <!-- 既存リポジトリのURLを指定 -->
+      <a href="https://oomi107.github.io/privacy-policy/test-it/">プライバシーポリシー</a>
+    </div>
+  </div>
+
+</body>
+</html>
